@@ -3,42 +3,58 @@
     {
       "id": "1",
       "name": "Dorpskerk Barendrecht",
+      "name_en": "Dorpskerk Barendrecht (Village Church)",
+      "name_de": "Dorpskerk Barendrecht (Dorfkirche)",
       "address": "Dorpsstraat 146, Barendrecht",
       "latitude": 51.8459,
       "longitude": 4.5301,
       "yearBuilt": 1512,
       "type": "kerk",
-      "story": "De Dorpskerk is het oudste rijksmonument van Barendrecht en werd op 2 mei 1512 ingewijd. In de kerktoren hangt nog een zeventiende-eeuws torenuurwerk, dat tijdens rondleidingen van dichtbij te bekijken is. De kerk staat al eeuwenlang midden in de samenleving van het dorp."
+      "story": "De Dorpskerk is het oudste rijksmonument van Barendrecht en werd op 2 mei 1512 ingewijd. In de kerktoren hangt nog een zeventiende-eeuws torenuurwerk, dat tijdens rondleidingen van dichtbij te bekijken is. De kerk staat al eeuwenlang midden in de samenleving van het dorp.",
+      "story_en": "The Dorpskerk is the oldest national monument in Barendrecht, consecrated on 2 May 1512. Its tower still holds a seventeenth-century clock mechanism, visible up close during guided tours. For centuries the church has been at the heart of village life.",
+      "story_de": "Die Dorpskerk ist das älteste Reichsdenkmal von Barendrecht und wurde am 2. Mai 1512 eingeweiht. Im Kirchturm hängt noch ein Uhrwerk aus dem 17. Jahrhundert, das bei Führungen aus der Nähe zu sehen ist. Die Kirche steht seit Jahrhunderten im Mittelpunkt des Dorflebens."
     },
     {
       "id": "2",
       "name": "Watertoren Barendrecht",
+      "name_en": "Barendrecht Water Tower",
+      "name_de": "Wasserturm Barendrecht",
       "address": "Dorpsstraat 152, Barendrecht",
       "latitude": 51.8461,
       "longitude": 4.5305,
       "yearBuilt": 1912,
       "type": "industrieel erfgoed",
-      "story": "Deze 36 meter hoge watertoren werd in 1912 gebouwd naar ontwerp van architect Roelof Kuipers en voorzag Barendrecht en Heerjansdam jarenlang van drinkwater. De toren combineert een betonnen skelet met baksteen in een overgangsstijl met Italiaanse renaissance-invloeden en is tegenwoordig een populaire trouwlocatie."
+      "story": "Deze 36 meter hoge watertoren werd in 1912 gebouwd naar ontwerp van architect Roelof Kuipers en voorzag Barendrecht en Heerjansdam jarenlang van drinkwater. De toren combineert een betonnen skelet met baksteen in een overgangsstijl met Italiaanse renaissance-invloeden en is tegenwoordig een populaire trouwlocatie.",
+      "story_en": "This 36-metre water tower was built in 1912 to a design by architect Roelof Kuipers and supplied Barendrecht and Heerjansdam with drinking water for many years. It combines a concrete frame with brick in a transitional style influenced by the Italian Renaissance, and is now a popular wedding venue.",
+      "story_de": "Dieser 36 Meter hohe Wasserturm wurde 1912 nach einem Entwurf des Architekten Roelof Kuipers errichtet und versorgte Barendrecht und Heerjansdam jahrelang mit Trinkwasser. Der Turm verbindet ein Betonskelett mit Backstein in einem Übergangsstil mit Anklängen an die italienische Renaissance und ist heute ein beliebter Hochzeitsort."
     },
     {
       "id": "3",
       "name": "Oude Dorpskern",
+      "name_en": "Old Village Centre",
+      "name_de": "Alter Dorfkern",
       "address": "Dorpsstraat, Barendrecht",
       "latitude": 51.8458,
       "longitude": 4.5293,
       "yearBuilt": null,
       "type": "beschermd dorpsgezicht",
-      "story": "Dit is het enige beschermde dorpsgezicht van Barendrecht. De bijzondere structuur, met een dijk in een boog rond een terp en de lager gelegen Dorpsstraat, is uniek voor de Zuid-Hollandse eilanden en is ondanks verdichting grotendeels intact gebleven."
+      "story": "Dit is het enige beschermde dorpsgezicht van Barendrecht. De bijzondere structuur, met een dijk in een boog rond een terp en de lager gelegen Dorpsstraat, is uniek voor de Zuid-Hollandse eilanden en is ondanks verdichting grotendeels intact gebleven.",
+      "story_en": "This is the only protected village landscape in Barendrecht. Its distinctive layout, with a dike curving around a mound and the lower-lying Dorpsstraat, is unique to the South Holland islands and has remained largely intact despite densification.",
+      "story_de": "Dies ist das einzige geschützte Dorfensemble von Barendrecht. Die besondere Struktur, mit einem Deich in einem Bogen um eine Warft und der tiefer gelegenen Dorpsstraat, ist einzigartig für die südholländischen Inseln und trotz Verdichtung weitgehend intakt geblieben."
     },
     {
       "id": "4",
       "name": "Pendrechtse Molen",
       "address": "Charloisse Lagedijk 364, Barendrecht",
       "latitude": 51.8675,
-      "longitude": 4.5180,
+      "longitude": 4.518,
       "yearBuilt": 1993,
       "type": "molen",
-      "story": "Deze rijksmonumentale molen werd in 1993 verplaatst naar zijn huidige plek aan de Charloisse Lagedijk en daarna gerestaureerd. Een molenaar geeft regelmatig rondleidingen, waarbij bezoekers leren hoe de molen vroeger werkte."
+      "story": "Deze rijksmonumentale molen werd in 1993 verplaatst naar zijn huidige plek aan de Charloisse Lagedijk en daarna gerestaureerd. Een molenaar geeft regelmatig rondleidingen, waarbij bezoekers leren hoe de molen vroeger werkte.",
+      "name_en": "Pendrecht Windmill",
+      "name_de": "Pendrechter Mühle",
+      "story_en": "This listed windmill was moved to its current location on the Charloisse Lagedijk in 1993 and restored afterwards. A miller regularly gives guided tours explaining how the mill once operated.",
+      "story_de": "Diese denkmalgeschützte Windmühle wurde 1993 an ihren heutigen Standort an der Charloisse Lagedijk versetzt und anschließend restauriert. Ein Müller bietet regelmäßig Führungen an und erklärt die frühere Funktionsweise der Mühle."
     },
     {
       "id": "5",
@@ -48,7 +64,11 @@
       "longitude": 4.5288,
       "yearBuilt": 1927,
       "type": "gebouw",
-      "story": "Het voormalige raadhuis van Barendrecht werd geopend in 1927. Het statige gebouw weerspiegelde destijds de trots van het lokale bestuur en is een goed bewaard voorbeeld van vroeg twintigste-eeuwse overheidsarchitectuur."
+      "story": "Het voormalige raadhuis van Barendrecht werd geopend in 1927. Het statige gebouw weerspiegelde destijds de trots van het lokale bestuur en is een goed bewaard voorbeeld van vroeg twintigste-eeuwse overheidsarchitectuur.",
+      "name_en": "Old Town Hall",
+      "name_de": "Altes Rathaus",
+      "story_en": "Barendrecht's former town hall opened in 1927. The dignified building reflected the pride of the local administration and is a well-preserved example of early twentieth-century civic architecture.",
+      "story_de": "Das ehemalige Rathaus von Barendrecht wurde 1927 eröffnet. Das repräsentative Gebäude ist ein gut erhaltenes Beispiel der öffentlichen Architektur des frühen 20. Jahrhunderts."
     },
     {
       "id": "6",
@@ -58,67 +78,95 @@
       "longitude": 4.5365,
       "yearBuilt": 1926,
       "type": "fabriekscomplex",
-      "story": "Het Velo-fabriekscomplex werd in 1926 gebouwd in de stijl van het Nieuwe Bouwen, herkenbaar aan strakke, functionele vormen. Op het terrein staan nog het kantoor, fabriekshallen en een schoorsteen met de naam Velo erin gemetseld. Sinds 1997 is het een gemeentelijk monument."
+      "story": "Het Velo-fabriekscomplex werd in 1926 gebouwd in de stijl van het Nieuwe Bouwen, herkenbaar aan strakke, functionele vormen. Op het terrein staan nog het kantoor, fabriekshallen en een schoorsteen met de naam Velo erin gemetseld. Sinds 1997 is het een gemeentelijk monument.",
+      "name_en": "Velo Office",
+      "name_de": "Velo-Büro",
+      "story_en": "The Velo factory complex was built in 1926 in the modernist Nieuwe Bouwen style. The office, factory halls and chimney bearing the name Velo still remain. Since 1997 it has been a municipal monument.",
+      "story_de": "Der Velo-Fabrikkomplex wurde 1926 im Stil des Neuen Bauens errichtet. Büro, Fabrikhallen und Schornstein mit dem Namen Velo sind erhalten. Seit 1997 ist die Anlage ein Gemeindedenkmal."
     },
     {
       "id": "7",
       "name": "Sluisje Vredepolder",
       "address": "Vredekade, Barendrecht",
-      "latitude": 51.8530,
-      "longitude": 4.5410,
+      "latitude": 51.853,
+      "longitude": 4.541,
       "yearBuilt": 1713,
       "type": "waterwerk",
-      "story": "De Vredepolder werd in 1713 ingepolderd en is een van de oudste polders van Barendrecht. Het bijbehorende sluisje regelde het waterpeil en heeft nog een zichtbaar negentiende-eeuws bedieningsmechaniek. Het is sinds 1997 een gemeentelijk monument."
+      "story": "De Vredepolder werd in 1713 ingepolderd en is een van de oudste polders van Barendrecht. Het bijbehorende sluisje regelde het waterpeil en heeft nog een zichtbaar negentiende-eeuws bedieningsmechaniek. Het is sinds 1997 een gemeentelijk monument.",
+      "name_en": "Vredepolder Sluice",
+      "name_de": "Schleuse Vredepolder",
+      "story_en": "The Vredepolder was reclaimed in 1713. Its sluice regulated the water level and still contains a visible nineteenth-century operating mechanism. It has been a municipal monument since 1997.",
+      "story_de": "Der Vredepolder wurde 1713 eingedeicht. Die Schleuse regelte den Wasserstand und besitzt noch einen sichtbaren Bedienungsmechanismus aus dem 19. Jahrhundert. Seit 1997 ist sie ein Gemeindedenkmal."
     },
     {
       "id": "8",
       "name": "Boerderij Ziedewijdsedijk 63",
       "address": "Ziedewijdsedijk 63, Barendrecht",
-      "latitude": 51.8410,
-      "longitude": 4.5470,
+      "latitude": 51.841,
+      "longitude": 4.547,
       "yearBuilt": 1690,
       "type": "boerderij",
-      "story": "Deze rieten boerderij dateert uit het einde van de zeventiende eeuw en ligt in een opvallende bocht van de dijk, ontstaan door een historische dijkdoorbraak. De leilindes voor de gevel werden vroeger geplant als wind- en zonnescherm."
+      "story": "Deze rieten boerderij dateert uit het einde van de zeventiende eeuw en ligt in een opvallende bocht van de dijk, ontstaan door een historische dijkdoorbraak. De leilindes voor de gevel werden vroeger geplant als wind- en zonnescherm.",
+      "name_en": "Farmhouse Ziedewijdsedijk 63",
+      "name_de": "Bauernhof Ziedewijdsedijk 63",
+      "story_en": "This thatched farmhouse dates from the late seventeenth century and stands on a bend in the dike created by a historic breach. The lime trees once sheltered the house from wind and sun.",
+      "story_de": "Dieser reetgedeckte Bauernhof stammt aus dem späten 17. Jahrhundert und liegt in einer durch einen historischen Deichbruch entstandenen Kurve. Die Linden dienten früher als Wind- und Sonnenschutz."
     },
     {
       "id": "9",
       "name": "D'Ouwe School (museum)",
       "address": "Dorpsstraat 150a, Barendrecht",
-      "latitude": 51.8460,
+      "latitude": 51.846,
       "longitude": 4.5303,
       "yearBuilt": null,
       "type": "museum",
-      "story": "Dit voormalige schoolgebouw is nu een museum over de lokale geschiedenis van Barendrecht, met aandacht voor oude gebouwen, architecten en het dagelijks leven van vroeger. Een goede plek om de andere hotspots in context te plaatsen."
+      "story": "Dit voormalige schoolgebouw is nu een museum over de lokale geschiedenis van Barendrecht, met aandacht voor oude gebouwen, architecten en het dagelijks leven van vroeger. Een goede plek om de andere hotspots in context te plaatsen.",
+      "name_en": "D'Ouwe School Museum",
+      "name_de": "Museum D'Ouwe School",
+      "story_en": "This former school now houses a museum about Barendrecht's local history, historic buildings and everyday life.",
+      "story_de": "Dieses ehemalige Schulgebäude beherbergt heute ein Museum zur Geschichte Barendrechts."
     },
     {
       "id": "10",
       "name": "Woonhuis De Beukenhof",
       "address": "Dorpsstraat-Oost 31, Barendrecht",
       "latitude": 51.8455,
-      "longitude": 4.5320,
+      "longitude": 4.532,
       "yearBuilt": 1870,
       "type": "woonhuis",
-      "story": "De Beukenhof is een woonhuis uit ongeveer 1870, gelegen in een ruime tuin met monumentale bomen. Tijdens open dagen is het pand van buiten te bezichtigen, samen met historisch beeldmateriaal van het huis en de tuin."
+      "story": "De Beukenhof is een woonhuis uit ongeveer 1870, gelegen in een ruime tuin met monumentale bomen. Tijdens open dagen is het pand van buiten te bezichtigen, samen met historisch beeldmateriaal van het huis en de tuin.",
+      "name_en": "De Beukenhof House",
+      "name_de": "Wohnhaus De Beukenhof",
+      "story_en": "De Beukenhof is a house dating from around 1870, surrounded by a spacious garden with monumental trees. During open days visitors can view the exterior and historic images.",
+      "story_de": "De Beukenhof ist ein Wohnhaus aus etwa 1870 mit einem großen Garten und alten Bäumen. An Tagen der offenen Tür können Besucher das Gebäude von außen besichtigen."
     },
     {
       "id": "11",
       "name": "Gaatkensplas",
       "address": "Koedood, Barendrecht",
-      "latitude": 51.8330,
-      "longitude": 4.5550,
+      "latitude": 51.833,
+      "longitude": 4.555,
       "yearBuilt": null,
       "type": "archeologisch rijksmonument",
-      "story": "Onder de waterplas Gaatkensplas ligt een archeologische vindplaats van zo'n zesduizend jaar oud, met sporen van jagers-verzamelaars uit de Swifterbantcultuur. Sinds 2005 is dit gebied een rijksmonument, ook al is er bovengronds niets van te zien."
+      "story": "Onder de waterplas Gaatkensplas ligt een archeologische vindplaats van zo'n zesduizend jaar oud, met sporen van jagers-verzamelaars uit de Swifterbantcultuur. Sinds 2005 is dit gebied een rijksmonument, ook al is er bovengronds niets van te zien.",
+      "name_en": "Gaatkensplas",
+      "name_de": "Gaatkensplas",
+      "story_en": "Beneath Gaatkensplas lies a six-thousand-year-old archaeological site with traces of Swifterbant hunter-gatherers. It became a national monument in 2005.",
+      "story_de": "Unter der Gaatkensplas befindet sich eine rund 6000 Jahre alte Fundstelle der Swifterbant-Kultur. Seit 2005 ist sie ein Reichsdenkmal."
     },
     {
       "id": "12",
       "name": "Pand Doormanplein 6",
       "address": "Doormanplein 6, Barendrecht",
-      "latitude": 51.8470,
-      "longitude": 4.5310,
+      "latitude": 51.847,
+      "longitude": 4.531,
       "yearBuilt": null,
       "type": "rijksmonument",
-      "story": "Dit pand is rijksmonument vanwege de ingezwenkte zijgevels en de houten kroonlijst, kenmerken van een bouwstijl die in het oude centrum van Barendrecht goed bewaard is gebleven."
+      "story": "Dit pand is rijksmonument vanwege de ingezwenkte zijgevels en de houten kroonlijst, kenmerken van een bouwstijl die in het oude centrum van Barendrecht goed bewaard is gebleven.",
+      "name_en": "Building Doormanplein 6",
+      "name_de": "Gebäude Doormanplein 6",
+      "story_en": "This national monument is known for its curved side façades and wooden cornice, features preserved in Barendrecht's historic centre.",
+      "story_de": "Dieses Reichsdenkmal ist für seine geschwungenen Seitenfassaden und die hölzerne Dachleiste bekannt."
     },
     {
       "id": "13",
@@ -128,7 +176,11 @@
       "longitude": 4.5297,
       "yearBuilt": null,
       "type": "boerderij",
-      "story": "Deze boerderij heeft een ingezwenkte voorgevel, een achterhuis met puntgevel en een erkerkamer met schilddak. Een mooi voorbeeld van traditionele boerderijbouw langs de oude dorpsstraat."
+      "story": "Deze boerderij heeft een ingezwenkte voorgevel, een achterhuis met puntgevel en een erkerkamer met schilddak. Een mooi voorbeeld van traditionele boerderijbouw langs de oude dorpsstraat.",
+      "name_en": "Farmhouse Dorpsstraat 141",
+      "name_de": "Bauernhof Dorpsstraat 141",
+      "story_en": "This farmhouse features a curved front façade, a rear gabled section and a bay room with a hipped roof.",
+      "story_de": "Dieser Bauernhof besitzt eine geschwungene Vorderfassade, ein Hinterhaus mit Giebel und einen Erker mit Walmdach."
     },
     {
       "id": "14",
@@ -138,47 +190,67 @@
       "longitude": 4.5285,
       "yearBuilt": null,
       "type": "boerderij",
-      "story": "Deze boerderij is van het Vlaamse middenlangsdeeltype, een bouwstijl waarbij woon- en bedrijfsgedeelte in elkaars verlengde onder één kap liggen. Het pand is een rijksmonument."
+      "story": "Deze boerderij is van het Vlaamse middenlangsdeeltype, een bouwstijl waarbij woon- en bedrijfsgedeelte in elkaars verlengde onder één kap liggen. Het pand is een rijksmonument.",
+      "name_en": "Farmhouse Dorpsstraat 168",
+      "name_de": "Bauernhof Dorpsstraat 168",
+      "story_en": "This farmhouse is a Flemish central-aisle type, with the home and farm arranged under one roof. It is a national monument.",
+      "story_de": "Dieser Bauernhof ist vom flämischen Mittellängstyp und steht als Reichsdenkmal unter Schutz."
     },
     {
       "id": "15",
       "name": "Rijksmonument Voordijk 464",
       "address": "Voordijk 464, Barendrecht",
-      "latitude": 51.8390,
-      "longitude": 4.5520,
+      "latitude": 51.839,
+      "longitude": 4.552,
       "yearBuilt": null,
       "type": "rijksmonument",
-      "story": "Een van de negentien rijksmonumenten van Barendrecht, gelegen aan de Voordijk. Het pand maakt deel uit van het beschermde erfgoed langs de oude dijkwegen rond het dorp."
+      "story": "Een van de negentien rijksmonumenten van Barendrecht, gelegen aan de Voordijk. Het pand maakt deel uit van het beschermde erfgoed langs de oude dijkwegen rond het dorp.",
+      "name_en": "National Monument Voordijk 464",
+      "name_de": "Reichsdenkmal Voordijk 464",
+      "story_en": "One of Barendrecht's nineteen national monuments, forming part of the protected heritage along the old dike roads.",
+      "story_de": "Eines der neunzehn Reichsdenkmäler Barendrechts entlang der historischen Deichstraßen."
     },
     {
       "id": "16",
       "name": "De Oude Haven",
       "address": "Oude Maas, Barendrecht",
-      "latitude": 51.8480,
-      "longitude": 4.5360,
+      "latitude": 51.848,
+      "longitude": 4.536,
       "yearBuilt": null,
       "type": "haven",
-      "story": "De oude haven van Barendrecht herinnert aan de tijd dat de Oude Maas een belangrijke vaarroute en handelsplaats was. Inwoners noemen deze plek nog regelmatig als waardevol stukje lokale geschiedenis."
+      "story": "De oude haven van Barendrecht herinnert aan de tijd dat de Oude Maas een belangrijke vaarroute en handelsplaats was. Inwoners noemen deze plek nog regelmatig als waardevol stukje lokale geschiedenis.",
+      "name_en": "Old Harbour",
+      "name_de": "Alter Hafen",
+      "story_en": "Barendrecht's old harbour recalls the time when the Oude Maas was an important trade route. Locals still value it as part of the town's heritage.",
+      "story_de": "Der alte Hafen erinnert an die Zeit, als die Oude Maas eine wichtige Handelsroute war."
     },
     {
       "id": "17",
       "name": "Restanten RTM-tramlijn",
       "address": "voormalig tracé, Barendrecht",
-      "latitude": 51.8440,
-      "longitude": 4.5250,
+      "latitude": 51.844,
+      "longitude": 4.525,
       "yearBuilt": null,
       "type": "infrastructuur",
-      "story": "Door Barendrecht liep ooit een lijn van de Rotterdamsche Tramweg Maatschappij (RTM), die dorpen op de eilanden verbond met Rotterdam. Verspreid in het landschap zijn nog restanten van dit tramverleden terug te vinden."
+      "story": "Door Barendrecht liep ooit een lijn van de Rotterdamsche Tramweg Maatschappij (RTM), die dorpen op de eilanden verbond met Rotterdam. Verspreid in het landschap zijn nog restanten van dit tramverleden terug te vinden.",
+      "name_en": "Remains of the RTM Tram Line",
+      "name_de": "Überreste der RTM-Straßenbahn",
+      "story_en": "The RTM once connected Barendrecht with Rotterdam and the islands. Remains of the line can still be found in the landscape.",
+      "story_de": "Die RTM verband einst Barendrecht mit Rotterdam und den Inseln. Noch heute sind Spuren der Strecke sichtbar."
     },
     {
       "id": "18",
       "name": "Gemaal Achterzeedijk",
       "address": "Achterzeedijk, Barendrecht",
-      "latitude": 51.8520,
-      "longitude": 4.5480,
+      "latitude": 51.852,
+      "longitude": 4.548,
       "yearBuilt": null,
       "type": "waterwerk",
-      "story": "Dit gemaal aan de Achterzeedijk hoorde bij het waterbeheer van de polders rond Barendrecht en pompte overtollig water weg. Het is een tastbare herinnering aan de eeuwenlange strijd tegen het water in de regio."
+      "story": "Dit gemaal aan de Achterzeedijk hoorde bij het waterbeheer van de polders rond Barendrecht en pompte overtollig water weg. Het is een tastbare herinnering aan de eeuwenlange strijd tegen het water in de regio.",
+      "name_en": "Achterzeedijk Pumping Station",
+      "name_de": "Pumpwerk Achterzeedijk",
+      "story_en": "This pumping station drained excess water from the surrounding polders and illustrates the region's long battle against water.",
+      "story_de": "Dieses Pumpwerk entwässerte die umliegenden Polder und erinnert an den jahrhundertelangen Kampf gegen das Wasser."
     },
     {
       "id": "19",
@@ -188,17 +260,25 @@
       "longitude": 4.5395,
       "yearBuilt": 1888,
       "type": "infrastructuur",
-      "story": "Tussen 1888 en 1969 overspande de oude Barendrechtse brug de Oude Maas en verbond zo Rotterdam met de Hoeksche Waard. Na de komst van de Heinenoordtunnel werd de brug afgebroken; de bruggenhoofden aan beide oevers bleven staan als rustige uitzichtpunten."
+      "story": "Tussen 1888 en 1969 overspande de oude Barendrechtse brug de Oude Maas en verbond zo Rotterdam met de Hoeksche Waard. Na de komst van de Heinenoordtunnel werd de brug afgebroken; de bruggenhoofden aan beide oevers bleven staan als rustige uitzichtpunten.",
+      "name_en": "Gatekeepers' Houses of the Old Barendrecht Bridge",
+      "name_de": "Brückenwärterhäuser der alten Barendrecht-Brücke",
+      "story_en": "The old Barendrecht Bridge crossed the Oude Maas from 1888 to 1969. After its demolition, the bridge abutments remained as quiet viewpoints.",
+      "story_de": "Die alte Barendrecht-Brücke überspannte von 1888 bis 1969 die Oude Maas. Nach ihrem Abriss blieben die Widerlager als Aussichtspunkte erhalten."
     },
     {
       "id": "20",
       "name": "Monument Watersnood",
       "address": "centrum Barendrecht",
       "latitude": 51.8465,
-      "longitude": 4.5310,
+      "longitude": 4.531,
       "yearBuilt": null,
       "type": "gedenkteken",
-      "story": "Dit gedenkteken herinnert aan de Watersnoodramp van 1953, die grote delen van Zuid-Holland en Zeeland trof. Het monument staat stil bij de impact van de overstromingen op de regio en de wederopbouw die daarop volgde."
+      "story": "Dit gedenkteken herinnert aan de Watersnoodramp van 1953, die grote delen van Zuid-Holland en Zeeland trof. Het monument staat stil bij de impact van de overstromingen op de regio en de wederopbouw die daarop volgde.",
+      "name_en": "Flood Disaster Memorial",
+      "name_de": "Denkmal der Flutkatastrophe",
+      "story_en": "This memorial commemorates the 1953 North Sea Flood and its impact on the region and subsequent reconstruction.",
+      "story_de": "Dieses Denkmal erinnert an die Flutkatastrophe von 1953 und ihre Folgen für die Region."
     }
   ]
 }
