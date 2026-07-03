@@ -39,6 +39,19 @@ export const AppProvider = ({children}) => {
         },
         subText: {
             color: theme === 'light' ? '#1E5C7E' : '#F5F5F5',
+            fontSize: 14,
+            fontWeight: '600',
+        },
+        address: {
+            color: theme === 'light' ? '#1E5C7E' : '#F5F5F5',
+            fontSize: 12,
+            marginTop: 2,
+        },
+        story: {
+            color: theme === 'light' ? '#1E5C7E' : '#F5F5F5',
+            fontSize: 14,
+            marginTop: 6,
+            lineHeight: 20
         },
         accentText: {
             color: theme === 'light' ? '#006494' : '#F5F5F5',
@@ -53,7 +66,18 @@ export const AppProvider = ({children}) => {
             shadowOffset: {width: 0, height: 2},
             shadowOpacity: 0.1,
             shadowRadius: 4,
-        }
+        },
+        button: {
+            backgroundColor: theme === 'light' ? '#006494' : '#1E5C7E',
+            borderRadius: 8,
+            paddingVertical: 10,
+            alignItems: 'center',
+        },
+
+        buttonText: {
+            color: '#F5F5F5',
+            fontWeight: '600',
+        },
     };
 
     return (

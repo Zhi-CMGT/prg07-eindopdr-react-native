@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
         borderRadius: 10,
     },
     activeOption: {
-        backgroundColor: '#006494'
+        backgroundColor: '#F5F5F5'
     },
     icon: {
         fontSize: 18,
@@ -54,6 +54,6 @@ const styles = StyleSheet.create({
         color: '#F5F5F5'
     },
     activeLabel: {
-        color: '#FFFFFF'
+        color: '#1E5C7E'
     }
 });

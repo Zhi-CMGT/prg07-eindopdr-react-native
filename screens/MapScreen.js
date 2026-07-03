@@ -12,7 +12,7 @@ import {getLocalizedField} from '../utils/hotspotLocalization';
 export default function MapScreen({route}) {
     const mapRef = useRef(null);
     const markerRefs = useRef({});
-    const {globalStyles, theme, lang} = useContext(AppContext);
+    const {globalStyles, theme, lang, t} = useContext(AppContext);
     const selectedHotspot = route.params?.selectedHotspot;
 
     const [hotspots, setHotspots] = useState([]);
@@ -153,7 +153,7 @@ export default function MapScreen({route}) {
         return (
             <View style={[globalStyles.container, styles.loaderFull]}>
                 <ActivityIndicator size="large" color="#051923"/>
-                <Text style={[styles.loaderText, globalStyles.text]}>Locatie bepalen...</Text>
+                <Text style={[styles.loaderText, globalStyles.text]}>{t.determiningLocation}</Text>
             </View>
         );
     }
@@ -195,7 +195,7 @@ export default function MapScreen({route}) {
                                 <Text style={styles.calloutTitle}>{getLocalizedField(hotspot, 'name', lang)}</Text>
                                 <Text style={styles.calloutType}>{hotspot.type}</Text>
                                 {favorites.includes(hotspot.id) && (
-                                    <Text style={styles.calloutFav}>⭐ Favoriet</Text>
+                                    <Text style={styles.calloutFav}>⭐ {t.favorites}</Text>
                                 )}
                             </View>
                         </Callout>
@@ -212,7 +212,7 @@ export default function MapScreen({route}) {
             </MapView>
 
             <TouchableOpacity style={styles.floatButton} onPress={handleShowAll}>
-                <Text style={styles.buttonText}>🌐 Alle locaties</Text>
+                <Text style={styles.buttonText}>🌐 {t.allLocations}</Text>
             </TouchableOpacity>
 
             {activeHotspot && (
@@ -234,19 +234,21 @@ export default function MapScreen({route}) {
                     </View>
 
                     {!!activeStory && (
-                        <Text style={styles.storyText} numberOfLines={4}>
+                        <Text style={[styles.storyText, globalStyles.subText]} numberOfLines={4}>
                             {activeStory}
                         </Text>
                     )}
 
-                    <Text style={styles.selectText}>Kies een route:</Text>
+                    <Text style={[styles.selectText, globalStyles.text]}>{t.chooseRoute}</Text>
+
                     <View style={styles.modeRow}>
                         <TouchableOpacity
                             style={[styles.modeButton, selectedMode === 'car' && styles.activeMode]}
                             onPress={() => calculateRoute('car', activeHotspot)}
                         >
                             <Text style={styles.modeIcon}>🚗</Text>
-                            <Text style={[styles.modeLabel, selectedMode === 'car' && {color: '#fff'}]}>Auto</Text>
+                            <Text
+                                style={[styles.modeLabel, {color: selectedMode === 'car' ? '#ffffff' : '#051923'}]}>{t.car}</Text>
                         </TouchableOpacity>
 
                         <TouchableOpacity
@@ -254,7 +256,8 @@ export default function MapScreen({route}) {
                             onPress={() => calculateRoute('bike', activeHotspot)}
                         >
                             <Text style={styles.modeIcon}>🚲</Text>
-                            <Text style={[styles.modeLabel, selectedMode === 'bike' && {color: '#fff'}]}>Fiets</Text>
+                            <Text
+                                style={[styles.modeLabel, {color: selectedMode === 'bike' ? '#ffffff' : '#051923'}]}>{t.bike}</Text>
                         </TouchableOpacity>
 
                         <TouchableOpacity
@@ -262,13 +265,15 @@ export default function MapScreen({route}) {
                             onPress={() => calculateRoute('foot', activeHotspot)}
                         >
                             <Text style={styles.modeIcon}>🚶</Text>
-                            <Text style={[styles.modeLabel, selectedMode === 'foot' && {color: '#fff'}]}>Lopend</Text>
+                            <Text
+                                style={[styles.modeLabel, {color: selectedMode === 'foot' ? '#ffffff' : '#051923'}]}>{t.foot}</Text>
                         </TouchableOpacity>
                     </View>
 
                     {travelTime !== null && (
                         <View style={styles.timeContainer}>
-                            <Text style={styles.timeText}>⏱️ Geschatte reistijd: {travelTime} min</Text>
+                            <Text
+                                style={[styles.timeText, globalStyles.accentText]}>⏱️ {t.estimatedTime} {travelTime} min</Text>
                         </View>
                     )}
                 </View>
@@ -362,12 +367,12 @@ const styles = StyleSheet.create({
     },
     storyText: {
         fontSize: 14,
-        color: '#1E5C7E',
+        // color: '#1E5C7E',
         lineHeight: 20,
         marginBottom: 15
     },
     selectText: {
-        color: '#1E5C7E',
+        // color: '#1E5C7E',
         fontSize: 14,
         marginBottom: 10,
         fontWeight: '600'
@@ -396,7 +401,7 @@ const styles = StyleSheet.create({
     modeLabel: {
         fontSize: 12,
         marginTop: 4,
-        color: '#051923',
+        // color: '#051923',
         fontWeight: '600'
     },
     timeContainer: {
@@ -408,7 +413,7 @@ const styles = StyleSheet.create({
     },
     timeText: {
         fontWeight: 'bold',
-        color: '#006494',
+        // color: '#006494',
         fontSize: 16
     },
     loaderContainer: {

@@ -30,19 +30,15 @@ function MyTabs() {
                     );
                 },
                 tabBarActiveTintColor: "#F5F5F5",
-                tabBarInactiveTintColor: "#1E5C7E",
+                tabBarInactiveTintColor: "#89C2D9",
                 headerShown: false,
                 tabBarShowLabel: false,
                 tabBarStyle: {
                     backgroundColor: "#003554",
                     height: 70,
-                    borderRadius: 25,
                     borderBottomWidth: 1,
                     borderTopWidth: 0,
                     position: 'absolute',
-                    bottom: 10,
-                    left: 10,
-                    right: 10,
                     elevation: 5
                 },
                 tabBarItemStyle: {

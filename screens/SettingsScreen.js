@@ -1,5 +1,5 @@
 import React, {useContext} from 'react';
-import {View, Text, StyleSheet, Button} from 'react-native';
+import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
 import {AppContext} from '../context/AppContext';
 import ThemeToggle from '../components/ThemeToggle';
 
@@ -17,10 +17,33 @@ export default function SettingsScreen() {
 
             <View style={styles.section}>
                 <Text style={[styles.label, globalStyles.text]}>{t.language}: {lang.toUpperCase()}</Text>
-                <View style={styles.row}>
-                    <Button title="NL" onPress={() => changeLanguage('nl')} disabled={lang === 'nl'}/>
-                    <Button title="EN" onPress={() => changeLanguage('en')} disabled={lang === 'en'}/>
-                    <Button title="DE" onPress={() => changeLanguage('de')} disabled={lang === 'de'}/>
+                <View style={styles.languageRow}>
+                    <TouchableOpacity
+                        style={[styles.languageButton, lang === 'nl' && styles.activeLanguageButton]}
+                        onPress={() => changeLanguage('nl')}
+                    >
+                        <Text style={[styles.languageText, lang === 'nl' && styles.activeLanguageText]}>
+                            Nederlands
+                        </Text>
+                    </TouchableOpacity>
+
+                    <TouchableOpacity
+                        style={[styles.languageButton, lang === 'en' && styles.activeLanguageButton]}
+                        onPress={() => changeLanguage('en')}
+                    >
+                        <Text style={[styles.languageText, lang === 'en' && styles.activeLanguageText]}>
+                            English
+                        </Text>
+                    </TouchableOpacity>
+
+                    <TouchableOpacity
+                        style={[styles.languageButton, lang === 'de' && styles.activeLanguageButton]}
+                        onPress={() => changeLanguage('de')}
+                    >
+                        <Text style={[styles.languageText, lang === 'de' && styles.activeLanguageText]}>
+                            Deutsch
+                        </Text>
+                    </TouchableOpacity>
                 </View>
             </View>
         </View>
@@ -47,6 +70,30 @@ const styles = StyleSheet.create({
     },
     row: {
         flexDirection: 'row',
-        gap: 10
-    }
+        gap: 10,
+    },
+    languageRow: {
+        flexDirection: 'row',
+        backgroundColor: '#1E5C7E',
+        borderRadius: 12,
+        padding: 4,
+    },
+    languageButton: {
+        flex: 1,
+        alignItems: 'center',
+        justifyContent: 'center',
+        paddingVertical: 12,
+        borderRadius: 10,
+    },
+    activeLanguageButton: {
+        backgroundColor: '#F5F5F5',
+    },
+    languageText: {
+        color: '#F5F5F5',
+        fontWeight: '600',
+        fontSize: 15,
+    },
+    activeLanguageText: {
+        color: '#1E5C7E',
+    },
 });

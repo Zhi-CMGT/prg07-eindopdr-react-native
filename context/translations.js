@@ -12,7 +12,18 @@ const translations = {
         edit: "Bewerken",
         delete: "Verwijderen",
         share: "Delen",
-        type: "Type"
+        type: "Type",
+        emptyFavorites: "Je hebt nog geen favorieten toegevoegd. Markeer ze met een ster op het Hotspots scherm of op de Map!",
+        noteSaved: "✔ Notitie opgeslagen!",
+        unfav: "Unfav",
+        determiningLocation: "Locatie bepalen...",
+        favorite: "Favoriet",
+        allLocations: "Alle locaties",
+        chooseRoute: "Kies een route:",
+        car: "Auto",
+        bike: "Fiets",
+        foot: "Lopend",
+        estimatedTime: "Geschatte reistijd:"
     },
     en: {
         hotspots: "Hotspots",
@@ -27,7 +38,18 @@ const translations = {
         edit: "Edit",
         delete: "Delete",
         share: "Share",
-        type: "Type"
+        type: "Type",
+        emptyFavorites: "You haven't added any favorites yet. Mark them with a star on the Hotspots or Map!",
+        noteSaved: "✔ Note saved!",
+        unfav: "Unfav",
+        determiningLocation: "Determining location...",
+        favorite: "Favorite",
+        allLocations: "All locations",
+        chooseRoute: "Choose a route:",
+        car: "Car",
+        bike: "Bike",
+        foot: "Walking",
+        estimatedTime: "Estimated travel time:"
     },
     de: {
         hotspots: "Hotspots",
@@ -42,7 +64,18 @@ const translations = {
         edit: "Bearbeiten",
         delete: "Löschen",
         share: "Teilen",
-        type: "Typ"
+        type: "Typ",
+        emptyFavorites: "Sie haben noch keine Favoriten hinzugefügt. Markieren Sie diese mit einem Stern auf dem Hotspots- oder Karten!",
+        noteSaved: "✔ Notiz gespeichert!",
+        unfav: "Unfav",
+        determiningLocation: "Standort ermitteln...",
+        favorite: "Favorit",
+        allLocations: "Alle Standorte",
+        chooseRoute: "Wähle eine Route:",
+        car: "Auto",
+        bike: "Fahrrad",
+        foot: "Zu Fuß",
+        estimatedTime: "Geschätzte Reisezeit:"
     }
 };
 

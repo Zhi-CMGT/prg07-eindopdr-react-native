@@ -1,18 +1,34 @@
 import React, {useState, useContext, useCallback} from 'react';
-import {View, Text, TextInput, Button, StyleSheet, FlatList, Share, ActivityIndicator} from 'react-native';
+import {
+    View,
+    Text,
+    TextInput,
+    TouchableOpacity,
+    StyleSheet,
+    FlatList,
+    Share,
+    ActivityIndicator
+} from 'react-native';
 import {useFocusEffect} from '@react-navigation/native';
 import {fetchHotspots} from '../services/hotspotService';
-import {getLocalNotes, saveLocalNote, deleteLocalNote, getFavorites, toggleFavorite} from '../storage/storageService';
+import {
+    getLocalNotes,
+    saveLocalNote,
+    deleteLocalNote,
+    getFavorites,
+    toggleFavorite
+} from '../storage/storageService';
 import {AppContext} from '../context/AppContext';
 import EmptyState from '../components/EmptyState';
 import {getLocalizedField} from '../utils/hotspotLocalization';
 
 export default function FavoritesScreen() {
-    const {globalStyles, t, lang} = useContext(AppContext);
+    const {globalStyles, t, lang, theme} = useContext(AppContext);
     const [favHotspots, setFavHotspots] = useState([]);
     const [notes, setNotes] = useState({});
     const [inputText, setInputText] = useState({});
     const [loading, setLoading] = useState(true);
+    const [saveMessage, setSaveMessage] = useState(false);
 
     useFocusEffect(
         useCallback(() => {
@@ -39,12 +55,16 @@ export default function FavoritesScreen() {
 
     const handleSave = async (id) => {
         await saveLocalNote(id, inputText[id] || '');
-        alert("Notitie opgeslagen!");
-        // Ververs data
+
+        setSaveMessage(true);
+
+        setTimeout(() => {
+            setSaveMessage(false);
+        }, 2000);
+
         const localNotes = await getLocalNotes();
         setNotes(localNotes);
     };
-
     const handleDeleteNote = async (id) => {
         await deleteLocalNote(id);
         const updatedInput = {...inputText};
@@ -56,7 +76,7 @@ export default function FavoritesScreen() {
 
     const handleRemoveFavorite = async (id) => {
         await toggleFavorite(id);
-        // Direct uit de gefilterde state halen voor soepele UI
+
         setFavHotspots(prev => prev.filter(h => h.id !== id));
     };
 
@@ -77,13 +97,22 @@ export default function FavoritesScreen() {
 
     return (
         <View style={[globalStyles.container, styles.container]}>
+
+            {saveMessage && (
+                <View style={styles.saveMessage}>
+                    <Text style={styles.saveMessageText}>
+                        {t.noteSaved}
+                    </Text>
+                </View>
+            )}
+
             <FlatList
                 data={favHotspots}
                 keyExtractor={(item) => item.id}
                 ListEmptyComponent={
                     <EmptyState
                         icon="⭐"
-                        message="Je hebt nog geen favorieten toegevoegd. Markeer ze met een ster op het Hotspots scherm!"
+                        message={t.emptyFavorites}
                     />
                 }
                 renderItem={({item}) => (
@@ -102,14 +131,32 @@ export default function FavoritesScreen() {
                             value={inputText[item.id] || ''}
                             onChangeText={(text) => setInputText({...inputText, [item.id]: text})}
                         />
-
                         <View style={styles.buttonRow}>
-                            <Button title={t.save} onPress={() => handleSave(item.id)} color="#006494"/>
+                            <TouchableOpacity
+                                onPress={() => handleSave(item.id)}
+                            >
+                                <Text style={globalStyles.buttonText}>{t.save}</Text>
+                            </TouchableOpacity>
+
                             {notes[item.id] && (
-                                <Button title={t.delete} onPress={() => handleDeleteNote(item.id)} color="#1E5C7E"/>
+                                <TouchableOpacity
+                                    onPress={() => handleDeleteNote(item.id)}
+                                >
+                                    <Text style={globalStyles.buttonText}>{t.delete}</Text>
+                                </TouchableOpacity>
                             )}
-                            <Button title="Unfav" onPress={() => handleRemoveFavorite(item.id)} color="#003554"/>
-                            <Button title={t.share} onPress={() => handleShare(item, notes[item.id])} color="#051923"/>
+
+                            <TouchableOpacity
+                                onPress={() => handleRemoveFavorite(item.id)}
+                            >
+                                <Text style={globalStyles.buttonText}>{t.unfav}</Text>
+                            </TouchableOpacity>
+
+                            <TouchableOpacity
+                                onPress={() => handleShare(item, notes[item.id])}
+                            >
+                                <Text style={globalStyles.buttonText}>{t.share}</Text>
+                            </TouchableOpacity>
                         </View>
                     </View>
                 )}
@@ -131,7 +178,6 @@ const styles = StyleSheet.create({
     noteText: {
         fontStyle: 'italic',
         marginVertical: 6,
-        color: '#1E5C7E',
         fontSize: 14
     },
     input: {
@@ -150,5 +196,17 @@ const styles = StyleSheet.create({
     loader: {
         flex: 1,
         justifyContent: 'center'
-    }
+    },
+    saveMessage: {
+        backgroundColor: '#4CAF50',
+        padding: 10,
+        borderRadius: 8,
+        marginBottom: 10,
+        alignItems: 'center',
+    },
+    saveMessageText: {
+        color: '#fff',
+        fontWeight: 'bold',
+        fontSize: 16,
+    },
 });

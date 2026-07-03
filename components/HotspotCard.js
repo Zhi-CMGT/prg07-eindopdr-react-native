@@ -14,17 +14,17 @@ export default function HotspotCard({hotspot, onPress, isFavorite, onFavoriteTog
         <TouchableOpacity style={[globalStyles.card, styles.cardContainer]} onPress={onPress}>
             <View style={styles.textContainer}>
                 <Text style={[styles.title, globalStyles.text]}>{name}</Text>
-                <Text style={styles.subText}>{t.type}: {hotspot.type}</Text>
-                <Text style={styles.address}>{hotspot.address}</Text>
+                <Text style={globalStyles.subText}>{t.type}: {hotspot.type}</Text>
+                <Text style={globalStyles.address}>{hotspot.address}</Text>
                 {!!story && (
-                    <Text style={styles.story} numberOfLines={2}>{story}</Text>
+                    <Text style={globalStyles.story} numberOfLines={2}>{story}</Text>
                 )}
             </View>
-            <TouchableOpacity style={styles.starButton} onPress={onFavoriteToggle}>
+            <TouchableOpacity style={globalStyles.starButton} onPress={onFavoriteToggle}>
                 <Ionicons
                     name={isFavorite ? "star" : "star-outline"}
                     size={28}
-                    color={isFavorite ? "#006494" : "#1E5C7E"}
+                    color={isFavorite ? "#FFD700" : "#888"}
                 />
             </TouchableOpacity>
         </TouchableOpacity>
@@ -45,22 +45,6 @@ const styles = StyleSheet.create({
         fontSize: 20,
         fontWeight: 'bold',
         marginBottom: 4
-    },
-    subText: {
-        color: '#1E5C7E',
-        fontSize: 14,
-        fontWeight: '600'
-    },
-    address: {
-        color: '#1E5C7E',
-        fontSize: 12,
-        marginTop: 2
-    },
-    story: {
-        color: '#006494',
-        fontSize: 14,
-        marginTop: 6,
-        lineHeight: 20
     },
     starButton: {
         padding: 8
